@@ -1,0 +1,134 @@
+.main__container {
+  margin: 8rem 5rem;
+}
+
+.main__section-left {
+  background-color: #292f33;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.main__section-left--hero-container {
+  height: 30rem;
+  position: relative;
+}
+.main__section-left--hero-container-img {
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+
+.main__section-left--hero-container-img:hover,
+.main__section-left--hero-container-img:active {
+  outline: 5px solid var(--color-primary-dark);
+  outline-offset: 5px;
+  transform: scale(1.1);
+}
+.main__section-left--hero-container-img:hover + div,
+.main__section-left--hero-container-img:active + div {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.main__section-left--hero__word-bubble {
+  position: absolute;
+  top: -60px;
+  left: 250px;
+  width: 250px;
+  margin: 50px auto;
+  border: 4px solid var(--color-primary-dark);
+  padding: 15px;
+  text-align: center;
+  font-family: "Patrick Hand";
+  font-size: 2.5rem;
+  background-color: rgb(152, 150, 150);
+  /* font-weight: 300; */
+  color: var(--color-primary-dark);
+  border-radius: 8px;
+  transition: 0.3s all ease-in-out;
+  opacity: 0;
+}
+
+.main__section-left--hero__word-bubble::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid var(--color-primary-dark);
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--color-primary-dark);
+  border-bottom: 10px solid transparent;
+  left: 20px;
+  bottom: -23px;
+}
+
+.main__section-left--hero__word-bubble::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid rgb(152, 150, 150);
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(152, 150, 150);
+  border-bottom: 10px solid transparent;
+  left: 24px;
+  bottom: -13px;
+}
+
+.main__section-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__section-right--twitter-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__section-right--twitter-feed a {
+  display: block;
+}
+
+/* #follow-button {
+  width: 225px !important;
+  background-color: red !important;
+} */
+
+.instafeed-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #292f33;
+  max-width: 225px;
+  justify-content: center;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+#instafeed-container .ig-imgs {
+  min-width: 5rem;
+  max-width: 15rem;
+  margin: 0.4rem;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.instafeed-title {
+  border-bottom: 1px solid white;
+  width: 225px;
+  margin: 5px 0;
+  padding: 1rem;
+}
+.instafeed-title i {
+  font-size: 3rem;
+}
+
+.instafeed-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.instafeed-link span {
+  margin-left: 1.3rem;
+}
